@@ -1,21 +1,23 @@
 require 'pry'
 def join_nested_strings(src)
-  empty_array = [] 
+  empty_array = ""
  row_index = 0 
  while row_index < src.length do 
    element_index = 0 
    while element_index < src[row_index].length do 
       
      if src[row_index][element_index].class == String
-       empty_array << src[row_index][element_index] 
+       empty_array += src[row_index][element_index] + " "
        
-       element_index += 1 
+       
      end
-     row_index += 1 
-     # binding.pry 
+     element_index += 1 
+     
+    # binding.pry 
    end 
+   row_index += 1 
  end 
-return empty_array.join(' ')
+return empty_array
 end
 
 
