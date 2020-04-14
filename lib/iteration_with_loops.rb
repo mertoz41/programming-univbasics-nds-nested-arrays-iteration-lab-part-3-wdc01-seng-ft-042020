@@ -9,11 +9,13 @@ def join_nested_strings(src)
      if src[row_index][element_index].class == String
        empty_array << src[row_index][element_index] 
        
-       element_index += 1 
+       
      end
-     row_index += 1 
+     element_index += 1 
+     
      binding.pry 
    end 
+   row_index += 1 
  end 
 return empty_array.join(' ')
 end
