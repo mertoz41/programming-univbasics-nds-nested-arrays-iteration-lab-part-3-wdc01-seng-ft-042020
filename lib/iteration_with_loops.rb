@@ -13,7 +13,7 @@ def join_nested_strings(src)
      end
      element_index += 1 
      
-     binding.pry 
+    # binding.pry 
    end 
    row_index += 1 
  end 
